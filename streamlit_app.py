@@ -1,3 +1,4 @@
+"""
 import streamlit as st
 import pandas as pd
 import pandas_profiling
@@ -9,3 +10,10 @@ df = pd.read_csv('testIstex.csv', delimiter="\t")
 df = df.drop(['publication_day', 'publication_month'], axis = 1)
 pr = df.profile_report()
 st_profile_report(pr)
+"""
+
+import streamlit as st
+
+st.title('st.secrets')
+
+st.write(st.secrets['message'])
