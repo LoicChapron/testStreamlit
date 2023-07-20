@@ -14,6 +14,7 @@ st_profile_report(pr)
 
 import streamlit as st
 import pandas as pd
+import time
 
 st.set_page_config(layout="wide")
 
