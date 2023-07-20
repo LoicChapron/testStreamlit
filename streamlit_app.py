@@ -15,6 +15,8 @@ st_profile_report(pr)
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(layout="wide")
+
 st.title('st.file_uploader')
 
 st.subheader('Input CSV')
@@ -29,7 +31,7 @@ if uploaded_file is not None:
 else:
   st.info('☝️ Upload a CSV file')
 
-st.set_page_config(layout="wide")
+
 
 st.title('How to layout your Streamlit app')
 
